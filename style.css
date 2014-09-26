@@ -273,6 +273,17 @@ footer, header, hgroup, menu, nav, section {
 	background-color: #3C4300;
 }
 
+.footersection{
+  padding-left: 30%;
+}
+
+.footersection h3{
+  font-family: "alternate-gothic-no-1-d", sans-serif;
+  color: #C95500;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+
 
 /* Responsive Stuff */
 @media screen and (max-width: 800px) {
