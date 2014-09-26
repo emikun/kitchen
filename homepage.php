@@ -47,23 +47,17 @@ get_header(); ?>
 <section class="demo2">
 
 	<div class="grid">
-		<div class="unit one-third">
-			<div class="otherstuff">
+		<div class="unit one-third otherstuff">
 			
 			<h3>Other Stuff</h3>
-		</div>
 	</div>
 
-		<div class="unit one-third">
-			<div class="moreotherstuff">
+		<div class="unit one-third moreotherstuff">
 			<h3>More other stuff</h3>
-		</div>
 	</div>
-		<div class="unit one-third">
-		<div class="moremoreotherstuff">
+		<div class="unit one-third moremoreotherstuff">
 
 			<h3>More more other stuff</h3>
-		</div>
 	</div>
 	</div>
 </section>
