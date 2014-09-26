@@ -199,6 +199,15 @@ footer, header, hgroup, menu, nav, section {
 	font-size: 500%;
 	color: #C95500;
 }
+
+.border-top {
+      height: 10px;
+      background: url(../img/Border-1x.png) repeat-x;
+    }
+.border-bottom {
+      height: 11px;
+      background: url(../img/Border-1x-bottom.png) repeat-x;
+    }
 .demo{
 	width: 100%;
 }
@@ -214,9 +223,6 @@ footer, header, hgroup, menu, nav, section {
 .whole{
 	width: 100%;
 	background-color: #CA9C19;
-	border-image-source:url(img/rectangle.png) 30 30 round;
-  	-webkit-border-image:url(rectangle.png) 30 30 round; /* Safari 3.1-5 */
-    -o-border-image:url(rectangle.png) 30 30 round; /* Opera 11-12.1 */
 
 }
 

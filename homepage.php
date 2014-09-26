@@ -24,12 +24,15 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 <section class="demo">
-  <div class="grid">
+	  	<div class="border-top"></div>
+<div class="grid">
+
     <div class="whole">
     	<h3>Learn how to cook with basil</h3>
     	<p>Kitchen N Things and Seattle restauranteur Tom Douglas' favorite summer recipes.</p>
   </div>
 </div>
+  	<div class="border-bottom"></div>
 </section>
 
 <section class="demo1">
