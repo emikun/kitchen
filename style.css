@@ -204,15 +204,15 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .demo p{
-	padding-left: 10%;
+	padding-left: 5%;
 	font-family: "Vollkorn", serif;
 	color: #fff;
 	font-size: 110%;
+  padding-bottom: 15%;
 }
 
 .whole{
 	width: 100%;
-	padding-bottom: 25%;
 	background-color: #CA9C19;
 	border-image-source:url(img/rectangle.png) 30 30 round;
   	-webkit-border-image:url(rectangle.png) 30 30 round; /* Safari 3.1-5 */
@@ -225,8 +225,8 @@ footer, header, hgroup, menu, nav, section {
 	font-size: 400%;
 	color: white;
 	text-transform: uppercase;
-	padding-left: 10%;
-	padding-top: 15%;
+	padding-left: 5%;
+	padding-top: 5%;
 }
 .demo1{
 	width: 92%;
