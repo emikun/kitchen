@@ -28,6 +28,7 @@ get_header(); ?>
     <div class="whole">
     	<h3>Learn how to cook with basil</h3>
     	<p>Kitchen N Things and Seattle restauranteur Tom Douglas' favorite summer recipes. Test!</p>
+    	<p>Emilie's test</p>
   </div>
 </div>
 </section>
