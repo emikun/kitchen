@@ -27,7 +27,7 @@ get_header(); ?>
   <div class="grid">
     <div class="whole">
     	<h3>Learn how to cook with basil</h3>
-    	<p>Kitchen N Things and Seattle restauranteur Tom Douglas' favorite summer recipes.</p>
+    	<p>Kitchen N Things and Seattle restauranteur Tom Douglas' favorite summer recipes. Test!</p>
   </div>
 </div>
 </section>
