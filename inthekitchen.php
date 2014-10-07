@@ -1,7 +1,7 @@
 <?php
 
 /**
-Template Name: In the Kitchen
+Template Name: In the Kitchen Page
 */
 ?>
 
@@ -26,6 +26,12 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
+
+				<?php if( get_field('photo_examples') ): ?>
+
+				<img src="<?php the_field('photo_examples'); ?>" />
+
+				<?php endif; ?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template

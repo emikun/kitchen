@@ -35,6 +35,14 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		}
+		define('PEC_DB_HOST','localhost'); // database host name or IP
+define('PEC_DB_USER','root'); // database login name
+define('PEC_DB_PASS',''); // database passworld
+define('PEC_DB_TYPE','mysql'); // database type
+define('PEC_DB_NAME','php_event_calendar'); // database table name
+define('PEC_DB_CHARSET','');
+
+define('PEC_PATH', '/phpEventCalendar'); // URL to PHP Event Calendar folder.
 	},
 "hooks": [
 	],

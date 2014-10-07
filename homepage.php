@@ -23,25 +23,29 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-<section class="demo">
-	  	<div class="border-top"></div>
-<div class="grid">
 
-    <div class="whole">
-    	<h3>Learn how to cook with basil</h3>
-    	<p>Kitchen N Things and Seattle restauranteur Tom Douglas' favorite summer recipes.</p>
+<section class="demo">
+<div class="grid">
+	<div class="border-top"></div>
+
+	<?php if( get_field('hero_image') ): ?>
+	<a href="http://www.elizayoungdesign.com/kitchen-n-things/event/cooking-with-basil/" title="Cooking with Basil"><img src="<?php the_field('hero_image');?>" class="hero";/></a>
+      	<div class="border-bottom"></div>
+
   </div>
 </div>
-  	<div class="border-bottom"></div>
+  	<?php endif; ?>
 </section>
 
 <section class="demo1">
 <div class="grid">
       <div class="unit three-fifths">
-        <h3>Upcoming Events</h3>
+        <!--<h3>Upcoming Events</h3>-->
+        <h3><?php the_field('top_left_module_title'); ?></h3>
+        <?php get_calendar(); ?>
       </div>
       <div class="unit two-fifths">
-          <h3>New Products</h3>
+          <h3><?php the_field ('top_right_module_title'); ?></h3>
       </div>
     </div>
 </section>
@@ -52,17 +56,25 @@ get_header(); ?>
 	<div class="grid">
 		<div class="unit one-third otherstuff">
 			
-			<h3>Other Stuff</h3>
+			<h3><?php the_field ('middle_left_module_title'); ?></h3>
+			<?php
+global $post;
+$args = array( 'posts_per_page' => 3 );
+$myposts = get_posts( $args );
+foreach( $myposts as $post ) :	setup_postdata($post); ?>
+<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a><br />
+<?php endforeach; ?>
+	
 	</div>
 
 		<div class="unit one-third moreotherstuff">
-			<h3>More other stuff</h3>
+			<h3><?php the_field ('middle_middle_module_title'); ?></h3>
 	</div>
 		<div class="unit one-third moremoreotherstuff">
 
-			<h3>More more other stuff</h3>
+			<h3><?php the_field ('middle_right_module_title'); ?></h3>
 	</div>
-	</div>
+</div>
 </section>
 
 </div>
@@ -78,5 +90,4 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_footer(); ?>

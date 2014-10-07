@@ -177,123 +177,129 @@ footer, header, hgroup, menu, nav, section {
 .pull-left    { float: left; }
 .pull-right   { float: right; }
 
-.two-fifths{
-	background-color: #3C4300;
-	color:white;
-	padding-bottom: 25%;
-	margin-left: 2%;
-	padding-right: 2%;
-}
 
-.three-fifths{
-	background-color: #C95500;
-	color:white;
-	padding-bottom: 25%;
-}
 
-.title{
-	padding-top: 10%;
-	padding-bottom: 5%;
-	padding-left: 37%;
-	font-family: "alternate-gothic-no-1-d", sans-serif;
-	font-size: 500%;
-	color: #C95500;
+.unit.one-third.otherstuff{
+  padding-bottom: 5%;
 }
-
-.border-top {
-      height: 10px;
-      background: url(../img/Border-1x.png) repeat-x;
-    }
-.border-bottom {
-      height: 11px;
-      background: url(../img/Border-1x-bottom.png) repeat-x;
-    }
-.demo{
-	width: 100%;
-}
-
-.demo p{
-	padding-left: 5%;
-	font-family: "Vollkorn", serif;
-	color: #fff;
-	font-size: 110%;
-  padding-bottom: 15%;
-}
-
-.whole{
-	width: 100%;
-	background-color: #CA9C19;
+.one-third.otherstuff a{
+  color: #fff;
+  margin-left: 5%;
+  font-family: 'Vollkorn', serif;
 
 }
 
-.demo h3{
-	font-family: "alternate-gothic-no-1-d", sans-serif;
-	font-size: 400%;
-	color: white;
-	text-transform: uppercase;
-	padding-left: 5%;
-	padding-top: 5%;
-}
-.demo1{
-	width: 92%;
-	padding-left: 10%;
-}
-.demo1 h3{
-	font-family: "alternate-gothic-no-1-d",sans-serif;
-	font-size: 300%;
-	color: white;
-	text-transform: uppercase;
-	padding-left: 5%;
+.unit.one-third.moreotherstuff{
+  padding-bottom: 10%;
 }
 
-.demo2{
-	width: 94.5%;
-	padding-left: 10%;
-}
-.demo2 h3{
-  width: 100%;
-	font-family: "alternate-gothic-no-1-d", sans-serif;
-	color: white;
-	font-size: 300%;
-	text-transform: uppercase;
-	padding-left: 5%;
-
-}
-
-.one-third{
-	margin-right: 2%;
-  width: 84%;
-}
-
-.otherstuff{
-	background-color: #C95500;
-  padding-right: 2%;
-}
-
-.moreotherstuff{
-	background-color:#3C4300;
-  padding-right: 2%;
-}
-
-.moremoreotherstuff{
-	background-color: #3C4300;
-}
-
-.footersection{
-  padding-left: 30%;
-}
-
-.footersection h3{
-  font-family: "alternate-gothic-no-1-d", sans-serif;
+.title a:visited{
   color: #C95500;
-  font-size: 150%;
-  text-transform: uppercase;
+}
+.title a:hover{
+  color: #C95500;
+}
+.title a:focus{
+  color: #C95500;
+}
+.title a:active{
+  color: #C95500;
 }
 
+#wp-calendar{
+  margin-left: 4%;
+}
 
+#wp-calendar title{
+  font-family: 'Vollkorn', sans-serif;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+
+}
+
+.widget-area{
+  margin-left: 30%;
+}
+
+.entry-title{
+  font-size: 200%;
+  padding-left: 40%;
+  padding-top: 2%;
+}
+
+.entry-meta{
+  display: none;
+}
+
+.bloggystepbystep{
+  margin-left: 23%;
+  margin-right: 15%;
+  padding-top: 1%;
+}
+.bloggy{
+  padding-top: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.entry-footer{
+  display: none;
+}
+
+.post_image{
+  margin-right: 15%;
+}
+
+.tribe-events-page-title{
+  padding-top: 2%;
+}
+
+#tribe-events-bar{
+  display: none;
+}
 /* Responsive Stuff */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1180px) {
   /* Stack anything that isn’t full-width on smaller screens */
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 0%;
+    margin-left: 0%;
+}
+
+.bloggy{
+  padding-top: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.entry-title{
+  font-size: 200%;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-right: 5%;
+}
+
   .grid .unit {
     width: 100% !important;
     padding-left: 0px;
@@ -306,6 +312,29 @@ footer, header, hgroup, menu, nav, section {
     padding-right: 0px;
   }
 
+.hero{
+  max-width: 100%;
+}
+
+.two-thirds.staffpicks{
+  background-color: #3C4300;
+  color:white;
+  padding-left: 2%;
+  padding-bottom: 0%;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.two-thirds.staffpicks h3{
+  color: white;
+  font-size: 300%;
+  padding-left: 5%;
+}
+.title h1{
+  font-size: 70%;
+  padding-right: 20%;
+
+}
   .onethird{
   	width: 100%;
   	padding-bottom: 0%;
@@ -313,13 +342,143 @@ footer, header, hgroup, menu, nav, section {
 
   .whole{
   	width: 100%;
+    margin: 0%;
+    padding: 0%;
   }
+.three-quarters{
+  width: 90%;
+  background-color: #CA9C19;
+  margin-left: 0%;
 
-  .demo{
-  	width: 100%;
-  	padding: 0%;
-  	margin: 0%;
-  }
+}
+
+.three-quarters h2{
+  font-size: 300%;
+  color: #fff;
+  padding-left: 5%;
+}
+
+.three-quarters h3{
+  font-size: 300%;
+  color: #fff;
+  padding-left: 5%;
+  padding-bottom: 15%;
+}
+
+.three-quarters p{
+  font-size: 100%;
+  color: #fff;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+
+}
+  h1, h2, h3, h4, h5, h6 {
+  font-family: "alternate-gothic-no-1-d", sans-serif;
+}
+p, li, ol, ul {
+  font-family: 'Vollkorn', serif;
+}
+.two-fifths{
+  background-color: #3C4300;
+  color:white;
+  margin-left: 2%;
+  padding-right: 2%;
+}
+
+.three-fifths{
+  background-color: #C95500;
+  color:white;
+}
+
+.title{
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 37%;
+  font-size: 500%;
+  color: #C95500;
+}
+
+.whole p{
+  padding-left: 5%;
+  color: #fff;
+  font-size: 110%;
+}
+
+.whole{
+  background-color: #CA9C19;
+
+}
+
+.whole h3{
+  font-size: 400%;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.demo1{
+  width: 92%;
+  padding-left: 10%;
+}
+.demo1 h3{
+  font-size: 300%;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+
+.demo2{
+  width: 94.5%;
+  padding-left: 10%;
+}
+.demo2 h3{
+  width: 100%;
+  color: white;
+  font-size: 300%;
+  text-transform: uppercase;
+  padding-left: 5%;
+
+}
+
+.one-third{
+  margin-right: 2%;
+  width: 84%;
+}
+
+.otherstuff{
+  background-color: #C95500;
+  padding-right: 2%;
+  padding-bottom: 5%;
+}
+
+.moreotherstuff{
+  background-color:#3C4300;
+  padding-right: 2%;
+}
+
+.moremoreotherstuff{
+  background-color: #3C4300;
+}
+
+.footersection{
+  padding-left: 30%;
+}
+
+.footersection h3{
+  color: #C95500;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+
+.border-top {
+      height: 10px;
+      background: url(img/Border-1X.png) repeat-x;
+    }
+.border-bottom {
+      height: 11px;
+      background: url(img/Border-1X-bottom.png) repeat-x;
+    }
 
 .demo1{
 	width:100%;
@@ -385,7 +544,6 @@ a:active {
 	float: left;
 	position: relative;
 	padding-right: 5%;
-	font-family: 'Vollkorn', serif;
 	text-transform: lowercase;
 	color: #3C4300;
 }
@@ -1021,14 +1179,9 @@ h3 {
 a {
   color: #c00;
   text-decoration: none;
-  border-bottom: 1px solid #eee;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-}
-
-header, section {
-  border-bottom: 1px solid #eee;
 }
 
 header, section, footer {
@@ -1086,7 +1239,7 @@ footer p {
   font-size: 1em;
 }
 
-@media (min-width: 960px){
+@media screen and (max-width: 800px) {
   h1 {
     font-size: 5em;
   }
@@ -1730,6 +1883,7 @@ a:active {
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 1.5em;
+
 }
 
 /* Make sure select elements fit in widgets */
@@ -1899,3 +2053,176 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+/*
+*
+* ELIZA & EMILIE CSS
+*
+*/
+
+@media screen and (min-width: 800px) {
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "alternate-gothic-no-1-d", sans-serif;
+}
+p, li, ol, ul {
+  font-family: 'Vollkorn', serif;
+}
+
+.two-thirds.staffpicks{
+  background-color: #3C4300;
+  color:white;
+  margin-left: 10%;
+  padding-left: 2%;
+  padding-bottom: 0%;
+  margin-top: 3%;
+  width: 79%;
+}
+
+.two-thirds.staffpicks h3{
+  color: white;
+  font-size: 300%;
+  padding-left: 5%;
+}
+
+.whole{
+  background-color: #3C4300;
+  color: white;
+  padding-bottom: 25%;
+  margin-left: 2%;
+  padding-left: 2%;
+}
+.two-fifths{
+  background-color: #3C4300;
+  color:white;
+  margin-left: 2%;
+  padding-right: 2%;
+}
+
+.three-fifths{
+  background-color: #C95500;
+  color:white;
+}
+
+.title{
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 37%;
+  font-size: 500%;
+  color: #C95500;
+}
+
+.demo{
+  width: 100%;
+}
+
+.whole p{
+  padding-left: 5%;
+  color: #fff;
+  font-size: 110%;
+  padding-bottom: 15%;
+}
+
+.three-quarters{
+  width: 90%;
+  background-color: #CA9C19;
+  margin-left: 10%;
+  margin-top: 2%;
+
+}
+
+.three-quarters h2{
+  font-size: 300%;
+  color: #fff;
+  padding-left: 5%;
+}
+
+.three-quarters h3{
+  font-size: 300%;
+  color: #fff;
+  padding-left: 5%;
+}
+
+.three-quarters p{
+  font-size: 100%;
+  color: #fff;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-right: 2%;
+}
+
+.whole h3{
+  font-size: 400%;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.demo1{
+  width: 92%;
+  padding-left: 10%;
+}
+.demo1 h3{
+  font-size: 300%;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+
+.demo2{
+  width: 94.5%;
+  padding-left: 10%;
+}
+.demo2 h3{
+  width: 100%;
+  color: white;
+  font-size: 300%;
+  text-transform: uppercase;
+  padding-left: 5%;
+
+}
+
+.one-third{
+  margin-right: 2%;
+  width: 84%;
+}
+
+.staffpicks{
+  background-color: #fff;
+  padding-right: 2%;
+}
+
+.otherstuff{
+  background-color: #C95500;
+  padding-right: 2%;
+}
+
+.moreotherstuff{
+  background-color:#3C4300;
+  padding-right: 2%;
+}
+
+.moremoreotherstuff{
+  background-color: #3C4300;
+}
+
+.footersection{
+  padding-left: 30%;
+}
+
+.footersection h3{
+  color: #C95500;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+
+.border-top {
+      height: 10px;
+      background: url(img/Border-1X.png) repeat-x;
+    }
+.border-bottom {
+      height: 11px;
+      background: url(img/Border-1X-bottom.png) repeat-x;
+    }
+

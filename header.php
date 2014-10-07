@@ -23,10 +23,10 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'kitchen' ); ?></a>
+	<!--<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'kitchen' ); ?></a>-->
 
 	<div class="title">
-	<h1>KITCHEN N THINGS</h1>
+	<a href="http://elizayoungdesign.com/kitchen-n-things"><h1>KITCHEN N THINGS</h1></a>
 	</div>
 
 
