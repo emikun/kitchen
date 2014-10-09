@@ -798,7 +798,41 @@ object {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
+<<<<<<< Updated upstream
   text-transform: uppercase;
+=======
+}
+p, li, ol, ul {
+  font-family: 'Vollkorn', serif;
+}
+
+.hours_of_operation{
+  margin-left: 10%;
+}
+
+.hours_of_operation h3{
+  font-size: 200%;
+}
+
+.hours_of_operation h2{
+  font-size: 150%;
+}
+
+.two-thirds.staffpicks{
+  background-color: #3C4300;
+  color:white;
+  margin-left: 10%;
+  padding-left: 2%;
+  padding-bottom: 0%;
+  margin-top: 3%;
+  width: 79%;
+}
+
+.two-thirds.staffpicks h3{
+  color: white;
+  font-size: 300%;
+  padding-left: 5%;
+>>>>>>> Stashed changes
 }
 
 h1 {font-size: 2em;}

@@ -33,7 +33,7 @@ get_header(); ?>
 </section>
 
 <div class="grid">
-	<div class="unit three-quarters">
+	<div class="unit half">
 		<h3><?php the_field('hoursofoperation_text'); ?></h3>
 	</div>
 </div>
