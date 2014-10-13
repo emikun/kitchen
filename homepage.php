@@ -31,14 +31,14 @@
 	<!-- Upcoming Events -->
 	<div class="col-md-7">
 		<div class="red-background content-area">
-			<h3>Events</h3>
-			<?php get_calendar(); ?>
+		<?php dynamic_sidebar('events_widget'); ?>
 		</div>
 	</div>
 	<!-- Featured Product -->
 	<div class="col-md-5">
 		<div class="green-background content-area">
-  			<h3>Featured Product</h3>
+			  			<?php dynamic_sidebar('featured_widget'); ?>
+			  			  		<h3>1</h3>
   		</div>
 	</div>
 </div><!-- end grid -->
@@ -46,23 +46,23 @@
 <div class="row">
 	<!-- Newest Recipe -->
 	<div class="col-md-4">
-		<h3>Newest Recipe</h3>
-		<?php
-			global $post;
-			$args = array( 'posts_per_page' => 3 );
-			$myposts = get_posts( $args );
-			foreach( $myposts as $post ) :	
-				setup_postdata($post); ?>
-			<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a><br />
-		<?php endforeach; ?>
+		<div class="cream-background content-area">
+					<?php dynamic_sidebar('recipes_widget'); ?>
+
 	</div>
+</div>
 	
 	<!-- Other Title-->
 	<div class="col-md-4">
-			<h3>Title</h3>
+		<div class="orange-background content-area">
+			<?php dynamic_sidebar('new_product_widget'); ?>
+			<h3><font color= "#F5A623">1</font></h3>
 	</div>
+</div>
 	<div class="col-md-4">
-			<h3>Title</h3>
+		<div class="tan-background content-area">
+			<?php dynamic_sidebar('101_widget'); ?>
+		</div>
 	</div>
 </div><!-- end grid --></div>
 

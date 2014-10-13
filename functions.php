@@ -91,6 +91,82 @@ function kitchen_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+		register_sidebar( array(
+		'name'          => __( 'Staffpicks Widget', 'kitchen' ),
+		'id'            => 'staffpicks_widget',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+				register_sidebar( array(
+		'name'          => __( 'New Items Widget', 'kitchen' ),
+		'id'            => 'newitems_widget',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+				register_sidebar( array(
+		'name'          => __( 'Blog Widget', 'kitchen' ),
+		'id'            => 'blog_widget',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+								register_sidebar( array(
+		'name'          => __( 'Featured Product Widget', 'kitchen' ),
+		'id'            => 'featured_widget',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+								register_sidebar( array(
+		'name'          => __( 'Recipes Widget', 'kitchen' ),
+		'id'            => 'recipes_widget',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+							register_sidebar( array(
+		'name'          => __( 'Events Widget', 'kitchen' ),
+		'id'            => 'events_widget',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+							register_sidebar( array(
+		'name'          => __( 'New Product Widget', 'kitchen' ),
+		'id'            => 'new_product_widget',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+							register_sidebar( array(
+		'name'          => __( '101 Series Widget', 'kitchen' ),
+		'id'            => '101_widget',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 }
 add_action( 'widgets_init', 'kitchen_widgets_init' );
 

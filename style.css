@@ -796,7 +796,7 @@ object {
 >>> EMILIE & ELIZA CSS ONLY ADD THINGS HERE MEOW
 ----------------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .entry-title a{
   font-family: "alternate-gothic-no-1-d", sans-serif;
 <<<<<<< Updated upstream
   text-transform: uppercase;
@@ -804,6 +804,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, li, ol, ul {
   font-family: 'Vollkorn', serif;
+}
+
+ul{
+  list-style-image: url('img/tinyarrow.png');
+}
+
+list-style-image{
+  width: 50%;
+}
+
+li{
+  padding-top: 3%;
+  padding-bottom: 1%;
 }
 
 .hours_of_operation{
@@ -869,7 +882,7 @@ header {
   width: 80%;
   margin: 0 auto;
   text-algin: center;
-  padding-top: 1em;
+  padding-top: 3em;
 }
 
 .title a {
@@ -883,6 +896,8 @@ nav {
   width: auto;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 25%;
+  padding-top: 3%;
 }
 
 .border-top {
@@ -913,9 +928,112 @@ nav {
   text-decoration: underline;
 }
 
-.green-background {background-color: #3C4300;}
-.yellow-background {background-color: #C99B2C;}
-.red-background {background-color: #C75500;}
+.green-background {
+  background-color: #3C4300;
+  margin-top: 5%;}
+.yellow-background {
+  background-color: #C99B2C;
+  margin-top: 5%;}
+.red-background {
+  background-color: #C75500;
+  margin-top: 3%;}
+.cream-background {
+  background-color: #F2EFE5;
+  margin-top: 5%;}
+.orange-background{
+  background-color: #F5A623;
+  margin-top: 5%;}
+.tan-background{
+  color: white;
+  background-color: #987B4A;
+  margin-top: 5%;
+}
 
+.post-152.post.type-post.status-publish.format-standard.hentry.category-staffpicks{
+width: 40%;
+margin-right: 0%;
+margin-left: 20%;
+float: left;
+border-bottom: none;
+}
+
+.post-150.post.type-post.status-publish.format-standard.hentry.category-staffpicks{
+width: 40%;
+margin-right: 0%;
+margin-left: 0%;
+float: right;
+border-bottom: none;
+
+}
+
+.post-148.post.type-post.status-publish.format-standard.hentry.category-staffpicks{
+width: 40%;
+margin-right: 0%;
+margin-left: 20%;
+float: left;
+border-bottom: none;
+
+}
+
+.post-143.post.type-post.status-publish.format-standard.hentry.category-staffpicks{
+width: 40%;
+margin-right: 0%;
+margin-left: 0%;
+float: right;
+border-bottom: none;
+
+}
+
+.post-158.post.type-post.status-publish.format-standard.hentry.category-newitems{
+width: 40%;
+margin-right: 0%;
+margin-left: 20%;
+float: left;
+border-bottom: none;
+
+}
+
+.post-154.post.type-post.status-publish.format-standard.hentry.category-newitems{
+width: 40%;
+margin-right: 0%;
+margin-left: 0%;
+float: right;
+}
+
+#events-list.widget.events_widget_list a{
+  color: white;
+  font-size: 110%;
+}
+
+#sticky-posts-6.widget.widget_ultimate_posts h1{
+  color:white;
+}
+
+#sticky-posts-3.widget.widget_ultimate_posts h1{
+  text-align: center;
+}
+
+#sticky-posts-4.widget.widget_ultimate_posts h1{
+  text-align: center;
+}
+
+#sticky-posts-5.widget.widget_ultimate_posts h1{
+  text-align: center;
+}
+
+.post-92.post.type-post.status-publish.format-standard.hentry.category-blog.category-recipe{
+
+  width: 50%;
+  margin-left: 25%;
+}
+
+.post-1.post.type-post.status-publish.format-standard.hentry.category-blog.tag-101series.tag-gregskitchen.tag-video{
+  width: 50%;
+  margin-left: 25%;
+}
+
+#tribe-events-bar{
+  display: none;
+}
 
 
