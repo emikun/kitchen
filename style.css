@@ -931,22 +931,33 @@ nav {
 .green-background {
   background-color: #3C4300;
   margin-top: 5%;}
+.green-background p{
+  color:white;}
+.green-background a{
+  color:white;
+}
 .yellow-background {
   background-color: #C99B2C;
   margin-top: 5%;}
 .red-background {
   background-color: #C75500;
-  margin-top: 3%;}
+  margin-top: 3%;
+  padding-bottom: 3%}
 .cream-background {
   background-color: #F2EFE5;
-  margin-top: 5%;}
+  margin-top: 5%;
+  padding-bottom: 25%;}
 .orange-background{
-  background-color: #F5A623;
+  background-color: #FBC468;
   margin-top: 5%;}
 .tan-background{
   color: white;
   background-color: #987B4A;
   margin-top: 5%;
+  padding-bottom: 25%;
+}
+.tan-background a{
+  color: white;
 }
 
 .post-152.post.type-post.status-publish.format-standard.hentry.category-staffpicks{
@@ -1011,10 +1022,12 @@ float: right;
 
 #sticky-posts-3.widget.widget_ultimate_posts h1{
   text-align: center;
+  text-decoration: underline;
 }
 
 #sticky-posts-4.widget.widget_ultimate_posts h1{
   text-align: center;
+  text-decoration: underline;
 }
 
 #sticky-posts-5.widget.widget_ultimate_posts h1{

@@ -56,7 +56,7 @@
 	<div class="col-md-4">
 		<div class="orange-background content-area">
 			<?php dynamic_sidebar('new_product_widget'); ?>
-			<h3><font color= "#F5A623">1</font></h3>
+			<h3><font color= "#FBC468">1</font></h3>
 	</div>
 </div>
 	<div class="col-md-4">
