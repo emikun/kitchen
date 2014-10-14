@@ -944,7 +944,7 @@ nav {
   margin-top: 3%;
   padding-bottom: 3%}
 .cream-background {
-  background-color: #F2EFE5;
+  background-color: #F6D49E;
   margin-top: 5%;
   padding-bottom: 25%;}
 .orange-background{
@@ -1049,4 +1049,18 @@ float: right;
   display: none;
 }
 
+.entry-date.published{
+  display:none;
+}
 
+.url.fn.n{
+  display:none;
+}
+
+.posted-on{
+  display:none;
+}
+
+.entry-meta{
+  display:none;
+}
