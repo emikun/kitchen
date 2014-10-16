@@ -936,6 +936,13 @@ nav {
 .green-background a{
   color:white;
 }
+.green-background.posttitle p{
+  margin-bottom: 0%;
+}
+.green-background h1{
+  padding-left: 1%;
+  color:white;
+}
 .yellow-background {
   background-color: #C99B2C;
   margin-top: 5%;}
@@ -1018,6 +1025,7 @@ float: right;
 
 #sticky-posts-6.widget.widget_ultimate_posts h1{
   color:white;
+  padding-bottom: 1%;
 }
 
 #sticky-posts-3.widget.widget_ultimate_posts h1{
@@ -1063,4 +1071,14 @@ float: right;
 
 .entry-meta{
   display:none;
+}
+
+.creature_feature{
+  width: 98%;
+  float:left;
+}
+
+.feat_image{
+  margin: 0%;
+  padding-left: 1%;
 }
