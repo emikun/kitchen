@@ -311,45 +311,6 @@ textarea {
   vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, .8);
-  cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-  -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-}
-
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-  border-color: #aaa #bbb #bbb;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0; /* Addresses excess padding in IE8/9 */
@@ -796,56 +757,30 @@ object {
 >>> EMILIE & ELIZA CSS ONLY ADD THINGS HERE MEOW
 ----------------------------------------------------------------*/
 
+
+/* Typography
+-------------------------------------------------- */
+
 h1, h2, h3, h4, h5, h6, .entry-title a{
   font-family: "alternate-gothic-no-1-d", sans-serif;
-<<<<<<< Updated upstream
   text-transform: uppercase;
-=======
 }
-p, li, ol, ul {
+p, li, ol, ul, table, tr, td, address, strong, em, input, small {
+  color: #191819;
   font-family: 'Vollkorn', serif;
 }
 
-ul{
+ul {
   list-style-image: url('img/tinyarrow.png');
 }
 
-list-style-image{
+list-style-image {
   width: 50%;
 }
 
-li{
+li {
   padding-top: 3%;
   padding-bottom: 1%;
-}
-
-.hours_of_operation{
-  margin-left: 10%;
-}
-
-.hours_of_operation h3{
-  font-size: 200%;
-}
-
-.hours_of_operation h2{
-  font-size: 150%;
-}
-
-.two-thirds.staffpicks{
-  background-color: #3C4300;
-  color:white;
-  margin-left: 10%;
-  padding-left: 2%;
-  padding-bottom: 0%;
-  margin-top: 3%;
-  width: 79%;
-}
-
-.two-thirds.staffpicks h3{
-  color: white;
-  font-size: 300%;
-  padding-left: 5%;
->>>>>>> Stashed changes
 }
 
 h1 {font-size: 2em;}
@@ -855,16 +790,22 @@ h4 {font-size: 1.4em;}
 h5 {font-size: 1.2em;}
 h6 {font-size: 1em;}
 
-p, li, ul, ol, a, table, tr, td, th {
-  font-family: "Vollkorn", serif;
-  color: #191819;
-}
 
 a, a:visited, a:active {
   color: #C75500;
   text-decoration: none;
 }
 
+.headline-text {
+  border-top: 1px solid #C99B2C;
+  border-bottom: 1px solid #C99B2C;
+  padding: .5em 0 .4em 0;
+  margin: 1em 0;
+  color: #C75500;
+}
+
+/* Homepage
+-------------------------------------------------- */
 .hero-unit {
   padding-bottom: 4em;
 }
@@ -878,6 +819,112 @@ a, a:visited, a:active {
   padding: 10px;
 }
 
+.home-hero-margin {
+  margin-bottom: 1em;
+}
+
+.green-background {
+  background-color: #3C4300;
+}
+
+.yellow-background {
+  background-color: #C99B2C;
+}
+
+.red-background {
+  background-color: #C75500;
+}
+
+.cream-background {
+  background-color: #F6D49E;
+}
+
+.orange-background{
+  background-color: #FBC468;
+}
+
+.tan-background{
+  background-color: #987B4A;
+}
+
+#events-list h1 {
+  text-align: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: .2em 0 .1em 0;
+  margin: .1em 0 .3em 0;
+}
+
+#events-list ul {
+  margin-left: 0;
+  margin-top: 1.7em;
+}
+
+#events-list ul li {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 23%;
+  margin-right: 2.666666667%;
+  font-size: .7em;
+  padding-top: 110px;
+  height: 180px;
+  text-align: center;
+}
+
+#events-list ul li:first-child {
+  background-image: url(img/onion.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#events-list ul li:nth-of-type(2) {
+  background-image: url(img/potato.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#events-list ul li:nth-of-type(3) {
+  background-image: url(img/celery.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#events-list ul li:last-child {
+  background-image: url(img/carrot.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#events-list ul li:last-of-type {
+  margin-right: 0;
+}
+
+#events-list ul li a:first-of-type {
+  display: block;
+  font-size: 1.8em !important;
+  text-align: center;
+}
+.module-area {
+  overflow: hidden;
+}
+
+.module-area h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.module-area img {
+  width: 50%;
+  float: left;
+  margin-left: -5%;
+}
+
+.product-content {
+  width: 50%;
+}
+
+/* Header
+-------------------------------------------------- */
 header {
   width: 80%;
   margin: 0 auto;
@@ -888,6 +935,10 @@ header {
 .title a {
   text-align: center;
   font-size: 2em;
+}
+
+.title a:hover {
+  text-decoration: none;
 }
 
 nav {
@@ -928,44 +979,6 @@ nav {
   text-decoration: underline;
 }
 
-.green-background {
-  background-color: #3C4300;
-  margin-top: 5%;}
-.green-background p{
-  color:white;}
-.green-background a{
-  color:white;
-}
-.green-background.posttitle p{
-  margin-bottom: 0%;
-}
-.green-background h1{
-  padding-left: 1%;
-  color:white;
-}
-.yellow-background {
-  background-color: #C99B2C;
-  margin-top: 5%;}
-.red-background {
-  background-color: #C75500;
-  margin-top: 3%;
-  padding-bottom: 3%}
-.cream-background {
-  background-color: #F6D49E;
-  margin-top: 5%;
-  padding-bottom: 25%;}
-.orange-background{
-  background-color: #FBC468;
-  margin-top: 5%;}
-.tan-background{
-  color: white;
-  background-color: #987B4A;
-  margin-top: 5%;
-  padding-bottom: 25%;
-}
-.tan-background a{
-  color: white;
-}
 
 .post-152.post.type-post.status-publish.format-standard.hentry.category-staffpicks{
 width: 40%;
@@ -1081,4 +1094,67 @@ float: right;
 .feat_image{
   margin: 0%;
   padding-left: 1%;
+}
+
+.home-image {
+  width: 100%;
+}
+
+/* Form Elements
+-------------------------------------------------- */
+input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+
+input[type="submit"] {
+  border: 1px solid #3C4300;
+  background-color: #3C4300;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/* Footer
+-------------------------------------------------- */
+footer {
+  margin-top: 3em;
+  padding: 4em 0;
+  font-size: .8em;
+/*  border-top: 1px solid #C99B2C;*/
+}
+
+.disclaimer-text {
+  padding-top: .3em;
+  color: #5A575A;
+}
+
+.footer-row {
+  max-width: 1000px;
+}
+
+footer h3 {
+  font-size: 2em;
+  margin-bottom: .5em;
+  color: #C75500;
+}
+
+footer .col-md-4,
+footer .col-md-2,
+footer .col-md-6 {
+  border-left: 1px solid #C99B2C;
+}
+
+/* Custom Media Queries
+-------------------------------------------------- */
+@media (max-width:768px) {
+  #events-list ul li {
+    width: 48%;
+    margin-right: 4%;
+  }
+
+  #events-list ul li:nth-of-type(2n+0) {
+    margin-right: 0%;
+  }
 }
