@@ -22,17 +22,6 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-
-<section class="events">
-<div class="grid">
-      <div class="unit three-quarters">
-        <h3>Upcoming Events</h3>
-        
-      </div>
- </div>
-</section>
-
 </div>
 
 <?php while ( have_posts() ) : the_post(); ?>

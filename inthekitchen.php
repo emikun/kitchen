@@ -21,10 +21,10 @@ Template Name: In the Kitchen Page
 get_header(); ?>
 
 <div class="row">
-	<div class="inthekitchen_content col-md-8">
+	<div class="inthekitchen_content col-md-9">
 		<?php dynamic_sidebar('blog_widget'); ?>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-3 blog-sidebar">
 		<?php get_sidebar(); ?>
 	</div>
 </div>
