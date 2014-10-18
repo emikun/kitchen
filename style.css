@@ -1060,6 +1060,10 @@ img {
   background: url(img/Border-1X-bottom.png) repeat-x;
 }
 
+#menu-menu-1{
+  text-align: center;
+}
+
 .menu-menu-1 {
   padding: 0;
 }
