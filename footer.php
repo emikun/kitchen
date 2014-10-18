@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 
-<footer id="colophon" class="site-footer" role="contentinfo">
+<footer id="colophon" class="site-footer footer" role="contentinfo">
 	<div class="row footer-row">
 		<div class="col-md-4 footer-col">
 			<h3>Hours of Operation</h3>
@@ -68,10 +68,39 @@
 			<p class="disclaimer-text">*We hate spam as much as you do, so your email stays safe with us.</p>
 		</div>
 	</div>
-<div class="container-fluid footer-row content-center">
-	<div class="pull-left"><small>&copy;  <?php echo get_bloginfo('name') . ' ' . date('Y') ?></small></div>
+<div class="row footer-row content-center colophon">
+	<div class="pull-left">
+		<p class="copyright">&copy;  <?php echo get_bloginfo('name') . ' ' . date('Y') ?></p>
+	</div>
 	<div class="pull-right">
-		
+		<!-- Pinterest -->	
+		<a href="<?php the_field('pinterest');?>">
+			<span class="fa-stack fa-lg">
+  				<i class="fa fa-circle fa-stack-2x"></i>
+  				<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<!-- Facebook -->	
+		<a href="<?php the_field('facebook');?>" class="blue-text">
+			<span class="fa-stack fa-lg">
+  				<i class="fa fa-circle fa-stack-2x"></i>
+  				<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<!-- Twitter -->	
+		<a href="<?php the_field('twitter');?>">
+			<span class="fa-stack fa-lg">
+  				<i class="fa fa-circle fa-stack-2x"></i>
+  				<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+		<!-- YouTube -->	
+		<a href="<?php $youtube = get_field('youtube', contact); echo $youtube;?>">
+			<span class="fa-stack fa-lg">
+  				<i class="fa fa-circle fa-stack-2x"></i>
+  				<i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
 	</div>
 </div>
 </footer>		
@@ -80,8 +109,8 @@
 
 <script>
 	$(function() {
-    $('.footer-col').matchHeight();
-});
+    	$('.footer-col, .kitchen-home-latest, .category-staffpicks, .category-newitems').matchHeight();
+	});
 </script>
 <?php wp_footer(); ?>
 

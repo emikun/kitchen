@@ -20,8 +20,10 @@ Template Name: Products
 
 get_header(); ?>
 
-<?php dynamic_sidebar('staffpicks_widget'); ?>
+<div class="row products-page">
 
-<?php dynamic_sidebar('newitems_widget'); ?>
+		<div class="row"><?php dynamic_sidebar('staffpicks_widget'); ?></div>
+		<div class="row"><?php dynamic_sidebar('newitems_widget'); ?></div>
+</div>
 
 <?php get_footer(); ?>

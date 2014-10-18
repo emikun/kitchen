@@ -20,12 +20,14 @@ Template Name: In the Kitchen Page
 
 get_header(); ?>
 
-<div class="inthekitchen_content">
-
-
-			<?php dynamic_sidebar('blog_widget'); ?>
-		</div>
-
+<div class="row">
+	<div class="inthekitchen_content col-md-8">
+		<?php dynamic_sidebar('blog_widget'); ?>
+	</div>
+	<div class="col-md-4">
+		<?php get_sidebar(); ?>
+	</div>
+</div>
 
 
 <?php get_footer(); ?>

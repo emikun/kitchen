@@ -17,6 +17,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/match-height.min.js"></script>
@@ -26,15 +27,16 @@
 
 <body <?php body_class(); ?> >
 <div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header" role="banner" class="header">
 		<!-- Title -->
 		<div class="title">
-			<a href="http://elizayoungdesign.com/kitchen-n-things"><h1><?php bloginfo('name');?></h1></a>
+			<a href="http://elizayoungdesign.com/kitchen-n-things">
+			<!-- <h1><?php bloginfo('name');?></h1> -->
+			<img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="Kitchen n Things Logo">
+			</a>
 		</div>
 		<!-- Navigation -->
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav>
+		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 	</header>
 
 <div id="content" class="site-content">
