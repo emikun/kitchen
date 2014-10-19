@@ -909,6 +909,13 @@ body {
 img {
   width: 100%;
 }
+.aligncenter.size-full.wp-image-314{
+  width: 30%;
+  margin: 0%;
+}
+.alignleft.size-full.wp-image-272{
+  width: 30%;
+}
 
 #events-list {
   padding: 1em;
@@ -1033,6 +1040,24 @@ img {
 .module-area h1,
 .kitchen-home-latest h3 {
   border-bottom: 1px solid #C99B2C;
+}
+
+/* Contact Page
+-------------------------------------------------- */
+
+.store_address{
+  width: 40%;
+  margin: 0px;
+}
+
+#mapConElem_1{
+  margin-right: 2%;
+  margin-left: 5%;
+}
+
+.hours{
+  width: 40%;
+  float: left;
 }
 
 /* Header
@@ -1295,10 +1320,29 @@ input[type="search"] {
     margin: 0;
     font-size: 1.4em;
   }
+
+  .store_address{
+    width: 100%;
+    text-align: center;
+  }
+  .hours{
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 992px) {
   .content-area {
     margin-bottom: 2em;
   }
+  .store_address{
+    width: 100%;
+    text-align: center;
+  }
+  .hours{
+    width: 100%;
+    text-align: center;
+  }
+
 }
