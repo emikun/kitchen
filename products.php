@@ -21,8 +21,11 @@ Template Name: Products
 get_header(); ?>
 
 <div class="row products-page">
-
-		<div class="row"><?php dynamic_sidebar('staffpicks_widget'); ?></div>
+		
+		<div class="row">
+		<h3 class="text-center headline-text" style="font-size:3em;">Staff Picks</h3>
+		<?php dynamic_sidebar('staffpicks_widget'); ?></div>
+		<h3 class="text-center headline-text" style="font-size:3em;">New Items</h3>
 		<div class="row"><?php dynamic_sidebar('newitems_widget'); ?></div>
 </div>
 

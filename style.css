@@ -986,6 +986,26 @@ img {
   font-size: 1.8em !important;
   text-align: center;
 }
+
+.tribe-events-page-title {
+  display:block;
+  color: #C75500;
+  border-top: 1px solid #C99B2C;
+  border-bottom: 1px solid #C99B2C;
+  text-align: center !important;
+}
+
+.tribe-bar-date-filter,
+.tribe-bar-disabled,
+.tribe-bar-form {
+  display: none;
+}
+
+tribe-events-list-separator-month span {
+  color: #C99B2C !important;
+  font-family: 'alternate-gothic-no-1-d' !important;
+}
+
 .module-area {
   overflow: hidden;
 }
@@ -1059,7 +1079,9 @@ img {
   width: 40%;
   float: left;
 }
-
+.ajax-loader {
+  display: none;
+}
 /* Header
 -------------------------------------------------- */
 .header {
@@ -1071,6 +1093,7 @@ img {
 
 .title {
   width: 40%;
+  max-width: 600px;
   margin: 3em auto;
 }
 
@@ -1238,7 +1261,7 @@ input[type="search"] {
 }
 
 .blog-sidebar {
-  margin-top: 4.6em;
+  margin-top: 3.3em;
   border: 1px solid #C99B2C !important;
   padding: 2em;
 }

@@ -14,6 +14,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 			<div class="row" id="normal-page">
+			<h3 class="text-center headline-text" style="font-size:3em;"><?php the_title();?></h3>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>

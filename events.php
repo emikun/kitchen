@@ -22,6 +22,8 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+					<h3 class="text-center headline-text" style="font-size:3em;">Events</h3>
+
 </div>
 
 <?php while ( have_posts() ) : the_post(); ?>

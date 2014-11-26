@@ -21,6 +21,8 @@ Template Name: In the Kitchen Page
 get_header(); ?>
 
 <div class="row">
+			<h3 class="text-center headline-text" style="font-size:3em;"><?php the_title();?></h3>
+
 	<div class="inthekitchen_content col-md-9">
 		<?php dynamic_sidebar('blog_widget'); ?>
 	</div>
